@@ -15,8 +15,10 @@ def read_root():
 # Rota dinâmica (GET)
 @app.get("/paroquias")
 def lista_paroquias():
-    
-    return "testezinho"
+    a = 1
+    b = 2
+    c = a + b
+    return c
 
 
 
