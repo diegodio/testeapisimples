@@ -9,4 +9,4 @@ def read_root():
     return JSONResponse(content={"message": "API está online!"})
 
 # adaptador para Vercel
-handler = Mangum(app)
+#handler = Mangum(app)
