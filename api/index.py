@@ -22,10 +22,13 @@ def lista_paroquias():
     #return df.columns.tolist()
 
 # Rota dinâmica (GET)
-@app.get("/teste/")
-def teste():
+@app.get("/missas/paroquia/{nome_paroquia}")
+def missas_paroquia(nome_paroquia: str):
+    df = pd.read_csv('https://raw.githubusercontent.com/santahora/santahora/main/horarios_missas_id_2.csv')
+    df_cut = df[df['Paróquia'] == nome_paroquia]
+    df_cut = df_cut.replace({np.nan: None})
 
-    return 'teste OK'
+    return df_cut.set_index('ID missa').to_dict(orient='index')
 
 
 
