@@ -3,6 +3,8 @@ from fastapi.responses import JSONResponse
 import pandas as pd
 import numpy as np
 from urllib.parse import unquote
+import json
+
 
 app = FastAPI()
 
@@ -35,9 +37,11 @@ def missas_paroquia(nome_paroquia: str):
     df_cut = df[df['Paróquia'] == nome_paroquia]
     #df_cut = df_cut.replace({np.nan: None})
 
-    return df_cut.to_dict(orient='index')
+    #return df_cut.to_dict(orient='index')
 
+    json_str = df_cut.to_json(orient="records", force_ascii=False)
 
+    return json.loads(json_str)
 
 
 
