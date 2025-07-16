@@ -2,9 +2,6 @@ from fastapi import FastAPI
 from fastapi.responses import JSONResponse
 import pandas as pd
 import numpy as np
-from urllib.parse import unquote
-import json
-
 
 app = FastAPI()
 
@@ -13,36 +10,39 @@ def read_root():
     return JSONResponse(content={"message": "API está online!"})
 
 
-
-
-
-
 # Rota dinâmica (GET)
 @app.get("/paroquias/")
 def lista_paroquias():
-    df = pd.read_csv('https://raw.githubusercontent.com/santahora/santahora/main/horarios_missas_id_2.csv')
-    dic_lista_paroquias = {'lista_paroquias': list(df['Paróquia'].unique())}
-    return dic_lista_paroquias
+    df = pd.read_csv('https://raw.githubusercontent.com/diegodio/testeapisimples/refs/heads/main/info_paroquias_normal.csv')
+    # dic_lista_paroquias = {'lista_paroquias': list(df['Paróquia'].unique())}
+
+    lista_paroquias = [{'id': row['ID paróquia'], 'paróquia': row['Paróquia']} for index, row in df.iterrows()]
+
+
+
+    return lista_paroquias #dic_lista_paroquias
     #return df.columns.tolist()
 
 # Rota dinâmica (GET)
-@app.get("/missas/paroquia/{nome_paroquia}")
-def missas_paroquia(nome_paroquia: str):
-    df = pd.read_csv('https://raw.githubusercontent.com/santahora/santahora/main/horarios_missas_id_2.csv')
+@app.get("/paroquias/{id_paroquia}/missas")
+def missas_paroquia(id_paroquia: int):
+    df = pd.read_csv('https://raw.githubusercontent.com/diegodio/testeapisimples/refs/heads/main/horarios_missas_id_2.csv')
 
-    nome_paroquia = unquote(nome_paroquia)
+    df_cut = df[df['ID paróquia'] == id_paroquia]
+    df_cut = df_cut.replace({np.nan: None})
 
 
-    #df['sua_coluna'] = df['sua_coluna'].str.replace('Ó', 'O', regex=False)
-    df_cut = df[df['Paróquia'] == nome_paroquia]
-    #df_cut = df_cut.replace({np.nan: None})
+    return JSONResponse(content=df_cut.to_dict(orient='records'))
 
-    #return df_cut.to_dict(orient='index')
+@app.get("/paroquias/{id_paroquia}/info")
+def missas_paroquia(id_paroquia: int):
+    df = pd.read_csv('https://raw.githubusercontent.com/diegodio/testeapisimples/refs/heads/main/info_paroquias_normal.csv')
 
-    json_str = df_cut.to_json(orient="records", force_ascii=False)
+    df_cut = df[df['ID paróquia'] == id_paroquia]
+    df_cut = df_cut.replace({np.nan: None})
 
-    return json.loads(json_str)
 
+    return JSONResponse(content=df_cut.to_dict(orient='records'))
 
 
 
@@ -94,6 +94,3 @@ def missas_paroquia(nome_paroquia: str):
 # def lista_paroquias():
 #     dic_lista_paroquias = {'lista_paroquias': list(df['Paróquia'].unique())}
 #     return dic_lista_paroquias
-
-# # Adaptador Mangum para Vercel Serverless Functions
-# # handler = Mangum(app)
