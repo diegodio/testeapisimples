@@ -17,8 +17,9 @@ def read_root():
 @app.get("/paroquias/")
 def lista_paroquias():
     df = pd.read_csv('https://raw.githubusercontent.com/santahora/santahora/main/horarios_missas_id_2.csv')
-
-    return df.columns.tolist()
+    dic_lista_paroquias = {'lista_paroquias': list(df['Paróquia'].unique())}
+    return dic_lista_paroquias
+    #return df.columns.tolist()
 
 # Rota dinâmica (GET)
 @app.get("/teste/")
