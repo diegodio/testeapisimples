@@ -1,28 +1,28 @@
-,ID missa,Paróquia,Arquidiocese,Decanato,Cidade,Dia,Horário,Observação,ID paróquia
-0,1,CATEDRAL - PARÓQUIA SAGRADO CORAÇÃO DE JESUS,Londrina,Centro,Londrina,Segunda,07h00,,1
-1,2,CATEDRAL - PARÓQUIA SAGRADO CORAÇÃO DE JESUS,Londrina,Centro,Londrina,Segunda,12h00,,1
-2,3,CATEDRAL - PARÓQUIA SAGRADO CORAÇÃO DE JESUS,Londrina,Centro,Londrina,Terça,07h00,,1
-3,4,CATEDRAL - PARÓQUIA SAGRADO CORAÇÃO DE JESUS,Londrina,Centro,Londrina,Terça,12h00,,1
-4,5,CATEDRAL - PARÓQUIA SAGRADO CORAÇÃO DE JESUS,Londrina,Centro,Londrina,Quarta,07h00,,1
-5,6,CATEDRAL - PARÓQUIA SAGRADO CORAÇÃO DE JESUS,Londrina,Centro,Londrina,Quarta,12h00,,1
-6,7,CATEDRAL - PARÓQUIA SAGRADO CORAÇÃO DE JESUS,Londrina,Centro,Londrina,Quinta,07h00,,1
-7,8,CATEDRAL - PARÓQUIA SAGRADO CORAÇÃO DE JESUS,Londrina,Centro,Londrina,Quinta,12h00,,1
-8,9,CATEDRAL - PARÓQUIA SAGRADO CORAÇÃO DE JESUS,Londrina,Centro,Londrina,Sexta,05h00,,1
-9,10,CATEDRAL - PARÓQUIA SAGRADO CORAÇÃO DE JESUS,Londrina,Centro,Londrina,Sexta,12h00,,1
-10,11,CATEDRAL - PARÓQUIA SAGRADO CORAÇÃO DE JESUS,Londrina,Centro,Londrina,Sexta,15h00,,1
-11,12,CATEDRAL - PARÓQUIA SAGRADO CORAÇÃO DE JESUS,Londrina,Centro,Londrina,Sábado,07h00,,1
-12,13,CATEDRAL - PARÓQUIA SAGRADO CORAÇÃO DE JESUS,Londrina,Centro,Londrina,Sábado,18h00,,1
-13,14,CATEDRAL - PARÓQUIA SAGRADO CORAÇÃO DE JESUS,Londrina,Centro,Londrina,Domingo,08h00,,1
-14,15,CATEDRAL - PARÓQUIA SAGRADO CORAÇÃO DE JESUS,Londrina,Centro,Londrina,Domingo,10h30,,1
-15,16,CATEDRAL - PARÓQUIA SAGRADO CORAÇÃO DE JESUS,Londrina,Centro,Londrina,Domingo,18h00,,1
-16,17,PARÓQUIA CORAÇÃO DE MARIA,Londrina,Centro,Londrina,Segunda,07h00,,2
-17,18,PARÓQUIA CORAÇÃO DE MARIA,Londrina,Centro,Londrina,Segunda,19h00,,2
-18,19,PARÓQUIA CORAÇÃO DE MARIA,Londrina,Centro,Londrina,Terça,07h00,,2
-19,20,PARÓQUIA CORAÇÃO DE MARIA,Londrina,Centro,Londrina,Terça,19h00,,2
-20,21,PARÓQUIA CORAÇÃO DE MARIA,Londrina,Centro,Londrina,Quarta,07h00,,2
-21,22,PARÓQUIA CORAÇÃO DE MARIA,Londrina,Centro,Londrina,Quarta,19h00,,2
-22,23,PARÓQUIA CORAÇÃO DE MARIA,Londrina,Centro,Londrina,Quinta,07h00,,2
-23,24,PARÓQUIA CORAÇÃO DE MARIA,Londrina,Centro,Londrina,Quinta,19h00,,2
+ID missa,Paróquia,Arquidiocese,Decanato,Cidade,Dia,Horário,Observação,ID paróquia
+1,CATEDRAL - PARÓQUIA SAGRADO CORAÇÃO DE JESUS,Londrina,Centro,Londrina,Segunda,07h00,,1
+2,CATEDRAL - PARÓQUIA SAGRADO CORAÇÃO DE JESUS,Londrina,Centro,Londrina,Segunda,12h00,,1
+3,CATEDRAL - PARÓQUIA SAGRADO CORAÇÃO DE JESUS,Londrina,Centro,Londrina,Terça,07h00,,1
+4,CATEDRAL - PARÓQUIA SAGRADO CORAÇÃO DE JESUS,Londrina,Centro,Londrina,Terça,12h00,,1
+5,CATEDRAL - PARÓQUIA SAGRADO CORAÇÃO DE JESUS,Londrina,Centro,Londrina,Quarta,07h00,,1
+6,CATEDRAL - PARÓQUIA SAGRADO CORAÇÃO DE JESUS,Londrina,Centro,Londrina,Quarta,12h00,,1
+7,CATEDRAL - PARÓQUIA SAGRADO CORAÇÃO DE JESUS,Londrina,Centro,Londrina,Quinta,07h00,,1
+8,CATEDRAL - PARÓQUIA SAGRADO CORAÇÃO DE JESUS,Londrina,Centro,Londrina,Quinta,12h00,,1
+9,CATEDRAL - PARÓQUIA SAGRADO CORAÇÃO DE JESUS,Londrina,Centro,Londrina,Sexta,05h00,,1
+10,CATEDRAL - PARÓQUIA SAGRADO CORAÇÃO DE JESUS,Londrina,Centro,Londrina,Sexta,12h00,,1
+11,CATEDRAL - PARÓQUIA SAGRADO CORAÇÃO DE JESUS,Londrina,Centro,Londrina,Sexta,15h00,,1
+12,CATEDRAL - PARÓQUIA SAGRADO CORAÇÃO DE JESUS,Londrina,Centro,Londrina,Sábado,07h00,,1
+13,CATEDRAL - PARÓQUIA SAGRADO CORAÇÃO DE JESUS,Londrina,Centro,Londrina,Sábado,18h00,,1
+14,CATEDRAL - PARÓQUIA SAGRADO CORAÇÃO DE JESUS,Londrina,Centro,Londrina,Domingo,08h00,,1
+15,CATEDRAL - PARÓQUIA SAGRADO CORAÇÃO DE JESUS,Londrina,Centro,Londrina,Domingo,10h30,,1
+16,CATEDRAL - PARÓQUIA SAGRADO CORAÇÃO DE JESUS,Londrina,Centro,Londrina,Domingo,18h00,,1
+17,PARÓQUIA CORAÇÃO DE MARIA,Londrina,Centro,Londrina,Segunda,07h00,,2
+18,PARÓQUIA CORAÇÃO DE MARIA,Londrina,Centro,Londrina,Segunda,19h00,,2
+19,PARÓQUIA CORAÇÃO DE MARIA,Londrina,Centro,Londrina,Terça,07h00,,2
+20,PARÓQUIA CORAÇÃO DE MARIA,Londrina,Centro,Londrina,Terça,19h00,,2
+21,PARÓQUIA CORAÇÃO DE MARIA,Londrina,Centro,Londrina,Quarta,07h00,,2
+22,PARÓQUIA CORAÇÃO DE MARIA,Londrina,Centro,Londrina,Quarta,19h00,,2
+23,PARÓQUIA CORAÇÃO DE MARIA,Londrina,Centro,Londrina,Quinta,07h00,,2
+24,PARÓQUIA CORAÇÃO DE MARIA,Londrina,Centro,Londrina,Quinta,19h00,,2
 24,25,PARÓQUIA CORAÇÃO DE MARIA,Londrina,Centro,Londrina,Sexta,07h00,,2
 25,26,PARÓQUIA CORAÇÃO DE MARIA,Londrina,Centro,Londrina,Sexta,19h00,,2
 26,27,PARÓQUIA CORAÇÃO DE MARIA,Londrina,Centro,Londrina,Sábado,07h00,,2
