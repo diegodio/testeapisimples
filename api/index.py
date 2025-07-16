@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from fastapi.responses import JSONResponse
 import pandas as pd
 import numpy as np
+from urllib.parse import unquote
 
 app = FastAPI()
 
@@ -26,7 +27,11 @@ def lista_paroquias():
 @app.get("/missas/paroquia/{nome_paroquia}")
 def missas_paroquia(nome_paroquia: str):
     df = pd.read_csv('https://raw.githubusercontent.com/santahora/santahora/main/horarios_missas_id_2.csv')
-    df['sua_coluna'] = df['sua_coluna'].str.replace('Ó', 'O', regex=False)
+
+    nome_paroquia = unquote(nome_paroquia)
+
+
+    #df['sua_coluna'] = df['sua_coluna'].str.replace('Ó', 'O', regex=False)
     df_cut = df[df['Paróquia'] == nome_paroquia]
     #df_cut = df_cut.replace({np.nan: None})
 
