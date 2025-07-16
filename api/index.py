@@ -14,7 +14,7 @@ def read_root():
 
 
 # Rota dinâmica (GET)
-@app.get("/paroquias")
+@app.get("/paroquias/")
 def lista_paroquias():
     df = pd.read_csv('https://raw.githubusercontent.com/santahora/santahora/main/horarios_missas_id_2.csv')
 
