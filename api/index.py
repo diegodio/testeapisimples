@@ -18,11 +18,11 @@ def read_root():
 def lista_paroquias():
     df = pd.read_csv('https://raw.githubusercontent.com/santahora/santahora/main/horarios_missas_id_2.csv')
 
-    return df.columns
+    return df.columns.tolist()
 
 # Rota dinâmica (GET)
 @app.get("/teste/")
-def lista_paroquias():
+def teste():
 
     return 'teste OK'
 
