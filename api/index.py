@@ -35,7 +35,7 @@ def missas_paroquia(nome_paroquia: str):
     df_cut = df[df['Paróquia'] == nome_paroquia]
     #df_cut = df_cut.replace({np.nan: None})
 
-    return df_cut.set_index('ID missa').to_dict(orient='records')
+    return nome_paroquia #df_cut.set_index('ID missa').to_dict(orient='records')
 
 
 
