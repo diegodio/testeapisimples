@@ -27,7 +27,7 @@ def lista_paroquias():
 def missas_paroquia(nome_paroquia: str):
     df = pd.read_csv('https://raw.githubusercontent.com/santahora/santahora/main/horarios_missas_id_2.csv')
     df_cut = df[df['Paróquia'] == nome_paroquia]
-    df_cut = df_cut.replace({np.nan: None})
+    #df_cut = df_cut.replace({np.nan: None})
 
     return df_cut.set_index('ID missa').to_dict(orient='index')
 
