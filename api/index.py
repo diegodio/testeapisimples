@@ -20,7 +20,11 @@ def lista_paroquias():
 
     return df.columns
 
+# Rota dinâmica (GET)
+@app.get("/teste/")
+def lista_paroquias():
 
+    return 'teste OK'
 
 
 
